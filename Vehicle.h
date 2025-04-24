@@ -36,6 +36,9 @@ public:
 		return year;
 	}
 
+	// Pure virtual function - abstract class
+	virtual void displayInfo() = 0;
+
 };
 
 #endif // AUTOMOBILE.H
