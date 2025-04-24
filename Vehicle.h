@@ -1,5 +1,5 @@
-#ifdef AUTOMOBILE.H
-#define AUTOMOBILE.H
+#ifndef VEHICLE.H
+#define VEHICLE.H
 #include <string>
 using namespace std;
 
@@ -19,14 +19,14 @@ public:
 	}
 
 	// Constructor
-	Vehicle(string vehicleMfr, int autoYear)
+	Vehicle(string vehicleMfr, int vehicleYear)
 	{
-		mfr = autoMfr;
-		year = autoYear;
+		mfr = vehicleMfr;
+		year = vehicleYear;
 	}
 
 	// Accessors
-	string get Mfr() const
+	string getMfr() const
 	{
 		return mfr;
 	}
@@ -37,9 +37,9 @@ public:
 	}
 
 	// Pure virtual function - abstract class
-	virtual void displayInfo() = 0;
+	virtual void displayInfo();
 
 };
 
-#endif // AUTOMOBILE.H
+#endif // VEHICLE.H
 
