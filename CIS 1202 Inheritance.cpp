@@ -1,6 +1,7 @@
 // CIS 1202 Inheritance.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include "Vehicle.h"
 #include "Car.h"
+#include "Truck.h"
 #include <iostream>
 using namespace std;
 
@@ -30,6 +31,11 @@ int main() {
     Car myCar("Honda", 2022, 4);
     cout << "\nTesting Car displayInfo:" << endl;
     myCar.displayInfo();
+
+    //Test 5: Parameterized Constructor for Truck
+    Truck myTruck("Ford", 2015, 1600);
+    cout << "\nTesting Truck displayInfo:" << endl;
+    myTruck.displayInfo();
 
     return 0;
 }
