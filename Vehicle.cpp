@@ -37,5 +37,7 @@ void Vehicle::setYear(int vYear) {
 
 // Virtual function implementation
 void Vehicle::displayInfo() {
+    cout << "Vehicle Information";
     cout << "Manufacturer: " << mfr << "\nYear Built: " << year << endl;
+    cout << "___________________" << endl;
 }

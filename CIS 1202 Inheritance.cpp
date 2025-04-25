@@ -6,36 +6,63 @@
 using namespace std;
 
 int main() {
-    cout << "Hello World" << endl;
+    string manufacturer;
+    int year;
+    int doors;
+    int towcap;
 
-    // Test 1: Default Constructor for Vehicle
-    Vehicle vehicle1;
-    cout << "\nTesting default constructor for Vehicle:" << endl;
-    vehicle1.displayInfo();
+    cout << "Vehicle Program" << endl;
+    cout << "_______________" << endl;
+    
+    // Prompt user for manufacturer, year for a vehicle
+    cout << "Vehicle:" << endl;
+    cout << "Enter manufacturer: ";
+    getline(cin, manufacturer); // Use getline to handle spaces
+    cout << "Enter year: ";
+    cin >> year;
 
-    // Test 2: Parameterized Constructor for Vehicle
-    Vehicle vehicle2("Toyota", 2020);
-    cout << "\nTesting parameterized constructor for Vehicle:" << endl;
-    vehicle2.displayInfo();
+    // Create Vehicle object
+    Vehicle userVehicle(manufacturer, year);
 
-    // Test 3: Setters and Getters for Vehicle
-    Vehicle vehicle3;
-    vehicle3.setMfr("Honda");
-    vehicle3.setYear(2022);
-    cout << "\nTesting setters and getters for Vehicle:" << endl;
-    cout << "Manufacturer: " << vehicle3.getMfr() << endl;
-    cout << "Year Built: " << vehicle3.getYear() << endl;
-    vehicle3.displayInfo();
+    // Display the Vehicle info
+    cout << "\nVehicle Information:" << endl;
+    userVehicle.displayInfo();
 
-    //Test 4: Parameterized Constructor for Car
-    Car myCar("Honda", 2022, 4);
-    cout << "\nTesting Car displayInfo:" << endl;
-    myCar.displayInfo();
+    //---------------------------------------------------------------
+    // Prompt user for manufacturer, year and doors for a car
+    cout << "\nCar:" << endl;
+    cin.ignore();
+    cout << "Enter manufacturer: ";
+    getline(cin, manufacturer); // Use getline to handle spaces
+    cout << "Enter year: ";
+    cin >> year;
+    cout << "Enter number of doors: ";
+    cin >> doors;
 
-    //Test 5: Parameterized Constructor for Truck
-    Truck myTruck("Ford", 2015, 1600);
-    cout << "\nTesting Truck displayInfo:" << endl;
-    myTruck.displayInfo();
+    // Create Car object
+    Car userCar(manufacturer, year, doors);
+
+    // Display the Car info
+    cout << "\nCar Information:" << endl;
+    userCar.displayInfo();
+
+    //---------------------------------------------------------------
+// Prompt user for manufacturer, year and doors for a truck
+    cout << "\nTruck:" << endl;
+    cin.ignore();
+    cout << "Enter manufacturer: ";
+    getline(cin, manufacturer); // Use getline to handle spaces
+    cout << "Enter year: ";
+    cin >> year;
+    cout << "Enter towing capacity: ";
+    cin >> towcap;
+
+    // Create Truck object
+    Truck userTruck(manufacturer, year, towcap);
+
+    // Display the Truck info
+    cout << "\nTruck Information:" << endl;
+    userTruck.displayInfo();
 
     return 0;
 }
