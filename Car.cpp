@@ -8,7 +8,7 @@ Car::Car() {
     doors = 0;
 }
 
-// Parameterized constructor
+// constructor for parameters
 Car::Car(string carMfr, int carYear, int carDoors) : Vehicle(carMfr, carYear) {
     doors = carDoors;
 }

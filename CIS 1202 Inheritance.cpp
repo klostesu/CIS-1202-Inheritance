@@ -1,4 +1,5 @@
 // CIS 1202 Inheritance.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Sue Klosterman Spring 2025
 #include "Vehicle.h"
 #include "Car.h"
 #include "Truck.h"

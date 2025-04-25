@@ -6,7 +6,7 @@ using namespace std;
 
 class Truck : public Vehicle {
 private:
-    int towcap; // Towing capacity (in pounds)
+    int towcap; // Towing capacity 
 
 public:
     Truck(); // Default constructor
@@ -16,7 +16,7 @@ public:
     int getTowcap() const; // Getter for doors
     void setTowcap(int truckTowcap); // Setter for doors
 
-    virtual void displayInfo(); // Virtual function
+    virtual void displayInfo(); // Virtual function for displayInfo
 };
 
 #endif

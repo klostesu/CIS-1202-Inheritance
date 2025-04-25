@@ -9,7 +9,7 @@ Vehicle::Vehicle() {
     year = 0;
 }
 
-// Parameterized constructor
+//  constructor - parameters
 Vehicle::Vehicle(string vMfr, int vYear) {
     mfr = vMfr;
     year = vYear; // Updated
@@ -35,7 +35,7 @@ void Vehicle::setYear(int vYear) {
     year = vYear; // Updated
 }
 
-// Virtual function implementation
+// Virtual function implementation - for displayInfo
 void Vehicle::displayInfo() {
     cout << "Vehicle Information";
     cout << "Manufacturer: " << mfr << "\nYear Built: " << year << endl;

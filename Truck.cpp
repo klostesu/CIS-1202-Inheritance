@@ -8,7 +8,7 @@ Truck::Truck() {
     towcap = 0;
 }
 
-// Parameterized constructor
+// constructor for parameters
 Truck::Truck(string truckMfr, int truckYear, int truckTowcap) : Vehicle(truckMfr, truckYear) {
     towcap = truckTowcap;
 }
