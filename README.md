@@ -1,0 +1,1 @@
+This project is a demonstation of using Inheritance.  A base class for Vehicle is created then two derived classes (Car and Truck) are created using inheritance from Vehicle and adding in one new private member for each.  A virtual display function is used to display object details from the base class and then adding in members for the class. 
